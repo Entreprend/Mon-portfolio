@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Développeur Web Full Stack">
+    <meta name="keywords" content="développeur web, portfolio, full stack, web developer">
+    <title>Mon Portfolio - Développeur Web</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Fixe -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Bonjour, je suis BONI Razack </p>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Développeur</span> Full Stack
+                </h1>
+                <p class="hero-subtitle">Je crée des expériences web exceptionnelles</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-placeholder">
+                        <img src="profile.png" alt="BONI Razack - Développeur Full Stack" />
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Passionné par le développement web moderne</h3>
+                    <p>
+                        Je suis un développeur full stack passionné avec une expertise dans 
+                        les technologies web modernes. J'adore créer des applications web élégantes 
+                        et performantes qui offrent une expérience utilisateur exceptionnelle.
+                    </p>
+                    <p>
+                        Mon objectif est de combiner la beauté du design avec la robustesse 
+                        technique pour livrer des produits qui font la différence.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Projets réalisés</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>3+</h4>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>30+</h4>
+                            <p>Clients satisfaits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5 / CSS3</h3>
+                    <p>Maîtrise complète des standards web modernes</p>
+                    <div class="skill-level">
+                        <span>Expert</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript ES6+</h3>
+                    <p>Développement moderne avec vanilla JS et frameworks</p>
+                    <div class="skill-level">
+                        <span>Avancé</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React / Vue.js</h3>
+                    <p>Frameworks JavaScript pour interfaces dynamiques</p>
+                    <div class="skill-level">
+                        <span>Avancé</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Développement backend et APIs REST</p>
+                    <div class="skill-level">
+                        <span>Intermédiaire</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Automatisation et scripts</p>
+                    <div class="skill-level">
+                        <span>Intermédiaire</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git / GitHub</h3>
+                    <p>Gestion de versions et collaboration</p>
+                    <div class="skill-level">
+                        <span>Avancé</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Projet E-commerce">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plateforme E-commerce</h3>
+                        <p>Application complète de vente en ligne avec panier, paiement et gestion de stock.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600" alt="Application Dashboard">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Tableau de bord interactif avec visualisation de données en temps réel.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="Réseau Social">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Réseau Social</h3>
+                        <p>Plateforme de partage et de connexion avec profil, messages et flux.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="Application Météo">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>App Météo</h3>
+                        <p>Application météo responsive avec API et prédictions en temps réel.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600" alt="Gestionnaire de Tâches">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gestionnaire de Tâches</h3>
+                        <p>Todo app moderne avec localStorage et organisation par catégories.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">LocalStorage</span>
+                            <span class="tag">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600" alt="Portfolio Creative">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Créatif</h3>
+                        <p>Site portfolio avec animations GSAP et design unique.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">GSAP</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Parlons de votre projet</h3>
+                    <p>
+                        Je suis toujours ouvert à discuter de nouveaux projets, 
+                        de créativité ou simplement pour faire connaissance.
+                    </p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>abdoulrazack607@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+229 0150986065</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Benin, Parakou</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+            <p>Créé avec <i class="fas fa-heart"></i> et passion</p>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="scroll-top" id="scroll-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+
