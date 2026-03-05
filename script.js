@@ -147,52 +147,44 @@ document.querySelectorAll('[data-aos]').forEach(el => {
    FORMULAIRE DE CONTACT
    =========================== */
 
+emailjs.init('Fe62WEVlev2Un19-z');
+
 const contactForm = document.getElementById('contact-form');
 const formMessage = document.getElementById('form-message');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    // Récupérer les valeurs du formulaire
-    const formData = {
+
+    const btn = contactForm.querySelector('button[type="submit"]');
+    btn.textContent = 'Envoi en cours...';
+    btn.disabled = true;
+
+    const templateParams = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     };
-    
-    // Simulation d'envoi (à remplacer par votre logique d'envoi)
-    setTimeout(() => {
-        showFormMessage('success', 'Votre message a été envoyé avec succès ! Merci de me contacter.');
-        contactForm.reset();
-    }, 1000);
-    
-    // Pour un vrai envoi, vous pourriez utiliser fetch() pour envoyer à votre backend
-    /*
-    fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        showFormMessage('success', 'Message envoyé avec succès !');
-        contactForm.reset();
-    })
-    .catch(error => {
-        showFormMessage('error', 'Une erreur est survenue. Veuillez réessayer.');
-    });
-    */
+
+    emailjs.send('service_18hxn42', 'template_b6ovgli', templateParams)
+        .then(() => {
+            showFormMessage('success', '✅ Message envoyé avec succès ! Je vous répondrai rapidement.');
+            contactForm.reset();
+            btn.textContent = 'Envoyer';
+            btn.disabled = false;
+        })
+        .catch(() => {
+            showFormMessage('error', '❌ Une erreur est survenue. Veuillez réessayer.');
+            btn.textContent = 'Envoyer';
+            btn.disabled = false;
+        });
 });
 
 function showFormMessage(type, message) {
     formMessage.textContent = message;
     formMessage.className = `form-message ${type}`;
-    
     setTimeout(() => {
-        formMessage.classList.remove('success', 'error');
+        formMessage.className = 'form-message';
     }, 5000);
 }
 
@@ -350,24 +342,8 @@ document.addEventListener('DOMContentLoaded', () => {
    PERFORMANCE : Lazy Loading des images
    =========================== */
 
-// Ajouter lazy loading aux images des projets
 const projectImages = document.querySelectorAll('.project-image img');
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.style.opacity = '0';
-                img.addEventListener('load', () => {
-                    img.style.transition = 'opacity 0.5s ease';
-                    img.style.opacity = '1';
-                });
-                observer.unobserve(img);
-            }
-        });
-    });
-    
-    projectImages.forEach(img => imageObserver.observe(img));
-}
-
+projectImages.forEach(img => {
+    img.style.opacity = '1';
+});
 

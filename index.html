@@ -17,6 +17,7 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navigation Fixe -->
@@ -52,7 +53,7 @@
                 <h1 class="hero-title">
                     <span class="gradient-text">Développeur</span> Full Stack
                 </h1>
-                <p class="hero-subtitle">Je crée des expériences web exceptionnelles</p>
+                <p class="hero-subtitle">J’aide les entreprises et entrepreneurs à obtenir plus de clients grâce à des sites web modernes, rapides et performants.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Voir mes projets</a>
                     <a href="#contact" class="btn btn-secondary">Me contacter</a>
@@ -92,32 +93,61 @@
             <div class="about-content">
                 <div class="about-image" data-aos="fade-right">
                     <div class="image-placeholder">
-                        <img src="profile.png" alt="BONI Razack - Développeur Full Stack" />
+                        <img src="profile.jpg" alt="BONI Razack - Développeur Full Stack" />
                     </div>
                 </div>
                 <div class="about-text" data-aos="fade-left">
-                    <h3>Passionné par le développement web moderne</h3>
+                    <h3>Je crée des sites web qui travaillent pour votre business</h3>
                     <p>
-                        Je suis un développeur full stack passionné avec une expertise dans 
-                        les technologies web modernes. J'adore créer des applications web élégantes 
-                        et performantes qui offrent une expérience utilisateur exceptionnelle.
+                        Je suis développeur web full stack spécialisé dans la création de sites
+                        web modernes, rapides et orientés résultats. 
+                        Mon objectif n’est pas seulement de créer un beau site, mais de concevoir
+                        une véritable présence digitale capable d’attirer et convertir vos visiteurs en clients.
                     </p>
                     <p>
-                        Mon objectif est de combiner la beauté du design avec la robustesse 
-                        technique pour livrer des produits qui font la différence.
+                        J’accompagne les entreprises, startups et entrepreneurs dans la digitalisation de leurs activités en développant
+                         des solutions web performantes, adaptées à leurs besoins et optimisées pour tous les appareils.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <h4>50+</h4>
-                            <p>Projets réalisés</p>
+                            <h4>10+</h4>
+                            <p>Projets développés</p>
                         </div>
                         <div class="stat-item">
                             <h4>3+</h4>
                             <p>Années d'expérience</p>
                         </div>
                         <div class="stat-item">
-                            <h4>30+</h4>
-                            <p>Clients satisfaits</p>
+                            <h4>6+</h4>
+                            <p>Collaborations</p>
+                        </div>
+                    </div>
+
+                    <!-- CV Section -->
+                    <div class="cv-section" id="cv">
+                        <h3>Mon CV</h3>
+                        <p class="cv-note">Vous pouvez consulter mon CV ci-dessous ou le télécharger.</p>
+                        <div class="cv-actions">
+                            <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noopener">
+                                <i class="fas fa-eye"></i>
+                                Ouvrir dans un nouvel onglet
+                            </a>
+                            <a class="btn btn-secondary" href="cv.pdf" download>
+                                <i class="fas fa-download"></i>
+                                Télécharger le CV (PDF)
+                            </a>
+                        </div>
+                        <div class="cv-viewer">
+                            <object data="cv_pdf.pdf" type="application/pdf" width="100%" height="100%">
+                                <div class="cv-fallback">
+                                    <p>Le lecteur PDF intégré n'est pas disponible.</p>
+                                    <p>
+                                        <a href="cv.pdf" target="_blank" rel="noopener">Ouvrir le CV</a>
+                                        ou
+                                        <a href="cv.pdf" download>Télécharger le CV</a>.
+                                    </p>
+                                </div>
+                            </object>
                         </div>
                     </div>
                 </div>
@@ -125,103 +155,95 @@
         </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
-            <div class="skills-grid">
-                <!-- Skill Card 1 -->
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML5 / CSS3</h3>
-                    <p>Maîtrise complète des standards web modernes</p>
-                    <div class="skill-level">
-                        <span>Expert</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                </div>
+   <!-- Section Compétences -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
+        <div class="skills-grid">
 
-                <!-- Skill Card 2 -->
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3>JavaScript ES6+</h3>
-                    <p>Développement moderne avec vanilla JS et frameworks</p>
-                    <div class="skill-level">
-                        <span>Avancé</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Card 3 -->
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React / Vue.js</h3>
-                    <p>Frameworks JavaScript pour interfaces dynamiques</p>
-                    <div class="skill-level">
-                        <span>Avancé</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Card 4 -->
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3>Node.js</h3>
-                    <p>Développement backend et APIs REST</p>
-                    <div class="skill-level">
-                        <span>Intermédiaire</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Card 5 -->
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3>Python</h3>
-                    <p>Automatisation et scripts</p>
-                    <div class="skill-level">
-                        <span>Intermédiaire</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skill Card 6 -->
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Git / GitHub</h3>
-                    <p>Gestion de versions et collaboration</p>
-                    <div class="skill-level">
-                        <span>Avancé</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML5 / CSS3</h3>
+                <p>Interfaces modernes, responsives et pixel-perfect adaptées à tous les écrans.</p>
+                <div class="skill-level">
+                    <span>Expert</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                 </div>
             </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                <h3>JavaScript / TypeScript</h3>
+                <p>Expériences interactives et applications robustes avec typage strict.</p>
+                <div class="skill-level">
+                    <span>Avancé</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <h3>React / Next.js</h3>
+                <p>Applications web dynamiques, SEO-friendly et ultra-performantes.</p>
+                <div class="skill-level">
+                    <span>Avancé</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <h3>Node.js / Express</h3>
+                <p>APIs REST sécurisées et backends performants pour vos applications.</p>
+                <div class="skill-level">
+                    <span>Intermédiaire</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>MongoDB / Firebase</h3>
+                <p>Bases de données flexibles et temps réel pour des apps modernes et scalables.</p>
+                <div class="skill-level">
+                    <span>Intermédiaire</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 78%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <h3>Git / GitHub</h3>
+                <p>Gestion professionnelle du code source et déploiement continu des projets.</p>
+                <div class="skill-level">
+                    <span>Avancé</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="skill-icon"><i class="fas fa-wind" style="font-size: 2.5rem; color: var(--primary-color);"></i></div>
+                <h3>Tailwind CSS</h3>
+                <p>Design systems cohérents et interfaces soignées développées rapidement.</p>
+                <div class="skill-level">
+                    <span>Avancé</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="800">
+                <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Vercel / Render</h3>
+                <p>Déploiement et mise en ligne de projets web full-stack en quelques minutes.</p>
+                <div class="skill-level">
+                    <span>Avancé</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Section Projets -->
     <section id="projects" class="projects">
@@ -231,9 +253,8 @@
                 <!-- Project Card 1 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Projet E-commerce">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                        <img src="images/ecommerce.png" alt="Aura Montres">                        <div class="project-overlay">
+                            <a href="https://aura-watches-sandy.vercel.app/" class="btn-icon" aria-label="Voir le projet">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <a href="#" class="btn-icon" aria-label="Code source">
@@ -242,8 +263,86 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Plateforme E-commerce</h3>
-                        <p>Application complète de vente en ligne avec panier, paiement et gestion de stock.</p>
+                        <h3>Aura (e-commerce montres)</h3>
+                        <p>Une expérience d'achat haut de gamme conçue pour convertir.
+                             Design premium, navigation fluide et présentation produit immersive — chaque détail 
+                             pensé pour que le visiteur devienne acheteur.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/dataflow.png" alt="DataFlow">                        
+                        <div class="project-overlay">
+                            <a href="https://landing-page-saas-mocha.vercel.app/" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DataFlow (SaaS IA)</h3>
+                        <p>Une landing page SaaS qui inspire confiance dès le premier regard. Sections fonctionnalités,
+                             tarifs et témoignages structurés pour transformer un visiteur curieux en client convaincu.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="images/site-coach.png" alt="Coach Business">                        <div class="project-overlay">
+                            <a href="https://coach-business-site.vercel.app/" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Coach (site coach business)</h3>
+                        <p>Un site qui vend avant même le premier appel. Conçu pour établir l'autorité du coach, 
+                            capter des leads qualifiés et pousser à la prise de rendez-vous en moins de 30 secondes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/le-comptoir-moderne.png" alt="Le Comptoir Moderne">                        <div class="project-overlay">
+                            <a href="https://le-comptoir-moderne.vercel.app" class="btn-icon" aria-label="Voir le projet">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="btn-icon" aria-label="Code source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Le Comptoir Moderne (restaurant)</h3>
+                        <p>Un site vitrine qui donne faim. Menu interactif, réservation en ligne et panneau admin complet —
+                             le restaurateur gère tout lui-même sans toucher une ligne de code.</p>
                         <div class="project-tags">
                             <span class="tag">React</span>
                             <span class="tag">Node.js</span>
@@ -252,12 +351,12 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <!-- Project : Site Vitrine Dynamique -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="700">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600" alt="Application Dashboard">
+                        <img src="images/portfolio.png" alt="Site Vitrine Dynamique">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="Voir le projet">
+                            <a href="https://celadon-tulumba-a0069c.netlify.app/" class="btn-icon" aria-label="Voir le projet">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <a href="#" class="btn-icon" aria-label="Code source">
@@ -266,113 +365,42 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Dashboard Analytics</h3>
-                        <p>Tableau de bord interactif avec visualisation de données en temps réel.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="Réseau Social">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="Voir le projet">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="btn-icon" aria-label="Code source">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Réseau Social</h3>
-                        <p>Plateforme de partage et de connexion avec profil, messages et flux.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="Application Météo">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="Voir le projet">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="btn-icon" aria-label="Code source">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>App Météo</h3>
-                        <p>Application météo responsive avec API et prédictions en temps réel.</p>
+                        <h3>Site Vitrine Dynamique</h3>
+                        <p>Conception d'un portfolio interactif haut de gamme alliant rigueur d'ingénierie et design immersif, 
+                            optimisé pour une expérience utilisateur fluide, réactive et techniquement irréprochable sur tous les supports.</p>
                         <div class="project-tags">
                             <span class="tag">JavaScript</span>
-                            <span class="tag">API</span>
-                            <span class="tag">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600" alt="Gestionnaire de Tâches">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="Voir le projet">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="btn-icon" aria-label="Code source">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Gestionnaire de Tâches</h3>
-                        <p>Todo app moderne avec localStorage et organisation par catégories.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">LocalStorage</span>
-                            <span class="tag">SCSS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 6 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600" alt="Portfolio Creative">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="Voir le projet">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="btn-icon" aria-label="Code source">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Créatif</h3>
-                        <p>Site portfolio avec animations GSAP et design unique.</p>
-                        <div class="project-tags">
                             <span class="tag">HTML5</span>
-                            <span class="tag">GSAP</span>
                             <span class="tag">CSS3</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            
+                <!-- DevIsAI -->
+<div class="project-card" data-aos="fade-up" data-aos-delay="500">
+    <div class="project-image">
+        <img src="images/devisai.png" alt="DevIsAI">
+        <div class="project-overlay">
+            <a href="https://devisaii.netlify.app" target="_blank" class="btn-icon" aria-label="Voir le projet">
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="images/devisai.png" target="_blank" class="btn-icon" aria-label="Code source">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
+    </div>
+    <div class="project-info">
+        <h3>DevIsAI</h3>
+        <p>SaaS de generation de devis automatique par IA. Remplissez un formulaire, l'IA produit un devis professionnel en secondes — tableau de bord, historique et gestion des clients inclus.</p>
+        <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">IA</span>
+        </div>
+    </div>
+</div>
+
     </section>
 
     <!-- Section Contact -->
@@ -381,10 +409,11 @@
             <h2 class="section-title" data-aos="fade-up">Contactez-moi</h2>
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
-                    <h3>Parlons de votre projet</h3>
+                    <h3>Discutons de votre projet</h3>
                     <p>
-                        Je suis toujours ouvert à discuter de nouveaux projets, 
-                        de créativité ou simplement pour faire connaissance.
+                       Vous avez un projet de site web ou souhaitez améliorer votre présence en ligne ?
+                       Je vous accompagne dans la création de solutions web modernes, rapides et adaptées à vos objectifs business.
+                       Contactez-moi dès maintenant pour discuter de votre projet.
                     </p>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -447,7 +476,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
-            <p>Créé avec <i class="fas fa-heart"></i> et passion</p>
+            <p>Créé avec passion <i class="fas fa-heart"></i> pour aider les entreprises à réussir leur transformation digitale.</p>
         </div>
     </footer>
 
